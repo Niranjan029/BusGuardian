@@ -7,4 +7,5 @@ class StudentListModel {
      var studentSEC:String = ""
      var studentADDRESS:String = ""
      var studentCONTACT:String = ""
+
 }

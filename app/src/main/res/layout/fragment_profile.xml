@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/etbg"
+            android:src="@drawable/profileicon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/stName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/etbg"
+
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Number"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="13dp"/>
+        <TextView
+            android:id="@+id/stId"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/etbg"
+            android:hint="125"
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="13dp"/>
+        <TextView
+            android:id="@+id/stPhoneNo"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/etbg"
+
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="13dp"/>
+        <TextView
+            android:id="@+id/stAddress"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/etbg"
+            android:inputType="textMultiLine"
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:textSize="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class/Section"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/stclass"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/etbg"
+
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

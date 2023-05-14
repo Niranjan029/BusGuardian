@@ -75,10 +75,10 @@ class StudentDatabaseTable(context:Context):SQLiteOpenHelper(context, DB_NAME,nu
 
     // single user data
     @SuppressLint("Range")
-    fun getStDetail(_id:Int):StudentListModel{
-        val stList = StudentListModel();
+    fun getStDetail(_id:String):StudentListModel{
+        val stList = StudentListModel()
         val db = writableDatabase
-        val selectQuery = "SELECT * FROM $TABLE_NAME WHERE $Student_ID = $_id"
+        val selectQuery = "SELECT * FROM $TABLE_NAME WHERE $Student_CONTACT = $_id"
         val cursor = db.rawQuery(selectQuery,null)
         cursor?.moveToFirst()
         stList.studentID = Integer.parseInt(cursor.getColumnIndex(Student_ID).toString())

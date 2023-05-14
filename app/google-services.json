@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92287580478",
+    "project_id": "bustracker-c2799",
+    "storage_bucket": "bustracker-c2799.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92287580478:android:d363550efd74a70802546f",
+        "android_client_info": {
+          "package_name": "com.example.bustracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92287580478-97uuiirfp5k0rter9nmfahjcmclnbjoi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB400xV-mIZpeVFLrKY59HVofnyuBx66WI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92287580478-97uuiirfp5k0rter9nmfahjcmclnbjoi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
