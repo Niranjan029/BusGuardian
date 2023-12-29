@@ -21,6 +21,7 @@ class RegistrationActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         dbHandler = StudentDatabaseTable(this)
+        secretcode()
         fetchData()
         userId = findViewById(R.id.registrationNoEt)
         userNo = findViewById(R.id.editTextNumberSigned)
@@ -52,29 +53,33 @@ class RegistrationActivity : AppCompatActivity() {
 
     }
 
-    private fun fetchData(){
+    private fun fetchData()
+    {
         userList = dbHandler!!.getALlDetails()
+        for (i in userList) {
+            Log.i("data", i.studentNAME + " " + i.studentCONTACT);
+        }
     }
 
     private fun secretcode()
     {
-//        var success:Boolean=false;
-//        val stData:StudentListModel = StudentListModel()
-//        stData.studentID = 1270
-//        stData.studentNAME = "pappu Bisleri"
-//        stData.studentCLASS="5"
-//        stData.studentSEC = "A"
-//        stData.studentCONTACT = "8908908900"
-//        stData.studentADDRESS = "vassii ,mumbai"
-//        success = dbHandler?.addDetails(stData) as Boolean
+        var success:Boolean=false;
+        val stData:StudentListModel = StudentListModel()
+        stData.studentID = 20321
+        stData.studentNAME = "Yash Pamecha"
+        stData.studentCLASS="12"
+        stData.studentSEC = "A"
+        stData.studentCONTACT = "7869265789"
+        stData.studentADDRESS = "jaipur,Rajasthan"
+        success = dbHandler?.addDetails(stData) as Boolean
         var _success:Boolean=false;
-        val _stData:StudentListModel = StudentListModel()
-        _stData.studentID = 1400
-        _stData.studentNAME = "Sushant singh"
-        _stData.studentCLASS="12"
-        _stData.studentSEC = "A"
-        _stData.studentCONTACT = "8349122392"
-        _stData.studentADDRESS = "ranchi ,jharkhand"
-        _success = dbHandler?.addDetails(_stData) as Boolean
+//        val _stData:StudentListModel = StudentListModel()
+//        _stData.studentID = 20342
+//        _stData.studentNAME = "Sahil Sharma"
+//        _stData.studentCLASS="12"
+//        _stData.studentSEC = "A"
+//        _stData.studentCONTACT = "7878002440"
+//        _stData.studentADDRESS = "jaipur ,Rajasthan"
+//        _success = dbHandler?.addDetails(_stData) as Boolean
     }
 }
