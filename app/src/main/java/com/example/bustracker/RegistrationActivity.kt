@@ -73,13 +73,22 @@ class RegistrationActivity : AppCompatActivity() {
         stData.studentADDRESS = "jaipur,Rajasthan"
         success = dbHandler?.addDetails(stData) as Boolean
         var _success:Boolean=false;
-//        val _stData:StudentListModel = StudentListModel()
-//        _stData.studentID = 20342
-//        _stData.studentNAME = "Sahil Sharma"
-//        _stData.studentCLASS="12"
-//        _stData.studentSEC = "A"
-//        _stData.studentCONTACT = "7878002440"
-//        _stData.studentADDRESS = "jaipur ,Rajasthan"
-//        _success = dbHandler?.addDetails(_stData) as Boolean
+        val _stData:StudentListModel = StudentListModel()
+        _stData.studentID = 20342
+        _stData.studentNAME = "Sahil Sharma"
+        _stData.studentCLASS="12"
+        _stData.studentSEC = "A"
+        _stData.studentCONTACT = "7878002440"
+        _stData.studentADDRESS = "jaipur ,Rajasthan"
+        _success = dbHandler?.addDetails(_stData) as Boolean
+        var __success:Boolean=false;
+        val __stData:StudentListModel = StudentListModel()
+        __stData.studentID = 20331
+        __stData.studentNAME = "Niranjan Patidar"
+        __stData.studentCLASS="12"
+       __stData.studentSEC = "A"
+        __stData.studentCONTACT = "8349122392"
+        __stData.studentADDRESS = "jaipur ,Rajasthan"
+        __success = dbHandler?.addDetails(__stData) as Boolean
     }
 }
