@@ -90,5 +90,16 @@ class RegistrationActivity : AppCompatActivity() {
         __stData.studentCONTACT = "8349122392"
         __stData.studentADDRESS = "jaipur ,Rajasthan"
         __success = dbHandler?.addDetails(__stData) as Boolean
+
+
+        var success1:Boolean=false;
+        val stData1:StudentListModel = StudentListModel()
+        stData1.studentID = 20339
+        stData1.studentNAME = "Akshat Mewara"
+        stData1.studentCLASS="12"
+        stData1.studentSEC = "A"
+        stData1.studentCONTACT = "6378522323"
+        stData1.studentADDRESS = "jaipur,Rajasthan"
+        success1 = dbHandler?.addDetails(stData1) as Boolean
     }
 }
